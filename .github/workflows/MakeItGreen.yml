@@ -16,8 +16,8 @@ jobs:
 
       - name: shine
         run: |
-          # git config --local user.name "test"
-          git config --local user.email test@test.com
+          git config --local user.name "${{ github.actor }}"
+          git config --local user.email ${{ secrets.EMAIL }}
           git remote set-url origin https://github.com/${{ github.repository }}.git
           git commit --allow-empty -m "${{ secrets.MESSAGE }}"
           git push
