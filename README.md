@@ -8,8 +8,8 @@
 
 使用方法：
 
-- Fork 此仓库
+- [复制此仓库内容](https://github.com/AstralLing/MakeItGreen/generate)
 - 在仓库的 secrets 中添加一条 `EMAIL` 并填入 GitHub 账号使用的邮箱
 - Have fun!
 
-只是随手写的一个小玩具，暂时不清楚 fork 之后环境变量能否正常工作……欢迎 issue !
+只是随手写的一个小玩具，暂时不清楚 fork / generate 之后环境变量能否正常工作……欢迎 issue !
