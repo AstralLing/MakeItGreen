@@ -19,5 +19,5 @@ jobs:
           git config --local user.name "${{ github.actor }}"
           git config --local user.email ${{ secrets.EMAIL }}
           git remote set-url origin https://github.com/${{ github.repository }}.git
-          git commit --allow-empty -m "${{ secrets.MESSAGE }}"
+          git commit --allow-empty -m "🟩 Have a nice day!"
           git push
