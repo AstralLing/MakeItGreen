@@ -1,6 +1,6 @@
 ### MakeItGreen
 
-在每日零点自动发起一次 commit 到此 repo。
+在每日零点自动发起一次 commit。
 
 ### Usage
 
