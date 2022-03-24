@@ -1,6 +1,6 @@
 ### MakeItGreen
 
-在每日零点自动发起一次 commit，可以通过修改 README 等任意更新操作手动触发一次。
+在每日 00:00<sup>UTC</sup> 自动发起一次 commit，可以通过修改 README 等任意更新操作手动触发一次，你也可以修改 `MakeItGreen.yml` 自定义触发时间。
 
 ### Usage
 
