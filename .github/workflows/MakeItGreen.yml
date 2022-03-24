@@ -1,0 +1,23 @@
+name: MakeItGreen
+
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  mig:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: shine
+        run: |
+          git config --local user.name "${{ github.actor }}"
+          # git config --local user.email ${{ secrets.GITHUB_EMAIL }}
+          git remote set-url origin https://github.com/${{ github.repository }}.git
+          git commit --allow-empty -m "${{ secrets.MESSAGE }}"
+          git push
